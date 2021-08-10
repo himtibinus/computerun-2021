@@ -1,0 +1,139 @@
+@font-face { font-family: AIRSTRIKE; src: url('airstrike.ttf'); } 
+@font-face { font-family: BAHNSCHRIFT; src: url('BAHNSCHRIFT\ 1.TTF'); } 
+
+body{
+    font-family: BAHNSCHRIFT;
+}
+
+.head-text{
+    font-family: AIRSTRIKE;
+}
+
+p{
+    font-size: clamp(16px, 3vw, 24px);
+}
+
+
+.my-large{
+    margin: 100px 0 50px;
+}
+
+.btn-purple-yellow{
+    background: linear-gradient(91.76deg, #AD1782 0.41%, #FFD044 100%);
+}
+
+.rounded-top-corner{
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+
+.btn-purple-yellow:hover{
+    filter: brightness(85%);
+}
+
+.cream{
+    background-color: #fdf0d8;
+}
+
+.text-purple{
+    color: #AD1782;
+}
+
+.text-light-purple{
+    color:#6D3EB0;
+}
+
+.text-light-blue{
+    color:#3381FF;
+}
+
+.yellow-shadow{
+    text-shadow: 2px 0px #FFB500;
+}
+
+.text-blue-purple{
+    background: -webkit-linear-gradient(#3381FF, #6D3EB0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.small-card{
+    max-width: 600px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-header{
+    border-radius: 20px;
+}
+
+.small-text{
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+.normal-text{
+    font-size: clamp(16px, 3vw, 24px);
+}
+
+.paket-1{
+    background: linear-gradient(91.76deg, #FFD044 0.41%, #AD1782 100%);
+}
+
+.paket-1-ht{
+    background: -webkit-linear-gradient(#FFD044, #AD1782);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paket-2{
+    background: linear-gradient(92.04deg, #AD1782 0%, #6D3EB0 100%);
+}
+
+.paket-2-ht{
+    background: -webkit-linear-gradient(#AD1782, #6D3EB0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paket-3{
+    background: linear-gradient(91.94deg, #6D3EB0 1.52%, #3381FF 100%);
+}
+
+.paket-3-ht{
+    background: -webkit-linear-gradient(#6D3EB0, #3381FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle-1{
+    position: relative;
+    width: clamp(70px, 13vw, 120px);
+    height: clamp(60px, 13vw, 110px);
+    top: 80px;
+    right: clamp(100px, 35vw, 270px);
+}
+
+.circle-2{
+    width: clamp(30px, 10vw, 70px);
+    height: clamp(30px, 10vw, 70px);
+    top: clamp(200px, 100%, 400px);
+    left: clamp(80px, 28vw, 240px);
+    z-index: 2;
+}
+
+
+@media only screen and (max-width: 800px){
+    .circle-2{
+        top: clamp(210px, 90%, 400px);
+        left: clamp(40px, 32vw, 240px);
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .circle-2{
+        left: clamp(40px, 25vw, 240px);
+    }
+}
