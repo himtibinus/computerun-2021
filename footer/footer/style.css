@@ -1,0 +1,36 @@
+@font-face { font-family: BAHNSCHRIFT; src: url('BAHNSCHRIFT\ 1.TTF'); } 
+@font-face { font-family: ROBOTO; src: url('Roboto-Regular.ttf'); } 
+
+body{
+    font-family: BAHNSCHRIFT;
+}
+
+.blue{
+    background-color: #0C1631;
+}
+
+.footer-text{
+    font-size: clamp(12px, 1vw, 24px);
+}
+
+.footer-img{
+    width: clamp(45px, 5vw, 63px);    
+}
+
+.org-photo{
+    width: clamp(150px, 30vw, 188.34px);
+}
+
+.computerun-photo{
+    width: clamp(220px, 30vw, 363px);
+}
+
+.credit-text{
+    font-family: ROBOTO;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-text{
+        font-size: clamp(16px, 1vw, 24px);
+    }
+}
