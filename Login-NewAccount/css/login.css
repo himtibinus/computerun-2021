@@ -1,0 +1,105 @@
+/* Default */
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(172.39deg, rgba(255, 192, 39, 0.2) 10.53%, rgba(173, 23, 130, 0.05) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+h1{
+    font-family: 'Airstrike', sans-serif;
+    color: #AD1782;
+    text-shadow: 3px 1px #FFB500 ;
+}
+
+/* Page Title (Welcome, Guest) */
+.welcome-text{
+    margin-top: 34px;
+}
+
+/* Form Layout */
+.form-container{
+    margin-top: 132px;
+}
+
+body .form-container{
+    width: 50%;
+}
+
+.form{
+    background-color: #FFF;
+    border: 2px solid #DBDBDB;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+/* Form Content */
+    /* Form elements settings */
+    .form div{
+        margin-bottom: 25px;
+    }
+
+    /* Input fields */
+    .form-floating{
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    /* Labels */
+    label{
+        font-family: 'Bahnschrift',sans-serif;
+        line-height: 29px;
+        color:#AD1782;
+    }
+
+    /* Checkbox */
+    .form-check-input{
+        border: 2px solid #DBDBDB;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    /* Login Button */
+    .login{
+        font-family: 'Airstrike', sans-serif;
+        background: linear-gradient(95.14deg, #AD1782 0%, #FFD044 100%);
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .login span{
+        color:white
+    }
+
+    /* Forgot Pass & Create Account */
+    p{
+        font-family: 'Bahnschrift',sans-serif;
+        line-height: 29px;
+        color:#AD1782; 
+    }
+
+    p a{
+        text-decoration: none;
+        color:#AD1782; 
+    }
+
+/* Footer */
+footer{
+    margin-top: 232-px;
+}
+
+@media only screen and (max-width: 576px){
+    body .form-container{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body .form-container{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
