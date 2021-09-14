@@ -1,0 +1,211 @@
+@font-face {
+    font-family: airstrike;
+    src: url(../FONT/airstrike/airstrike.ttf);
+}
+@font-face {
+    font-family: bahnschrift;
+    src: url(../FONT/Bahnschrift/BAHNSCHRIFT.TTF);
+}
+* {
+    font-family: bahnschrift;
+}
+.airstrike{
+    font-family: airstrike;
+}
+body {
+    background-image: linear-gradient( white, white, #ffd467);
+    background-repeat: no-repeat;
+    overflow-x: hidden !important;
+}
+.arrowleft{
+    transform: rotate(180deg);
+}
+.bordershadowbottom{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    -webkit-box-shadow: 0 8px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 6px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.description{
+    background-color: transparent;
+}
+.bottomitemcarousel{
+    background-color: #FFD044;
+    color: #AD1782;
+    
+}
+.boxshadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.winner23{
+    display: flex;
+    justify-content:space-between
+}
+@media(max-width: 720px){
+    .winner23{
+        display: block;
+    }
+}
+
+.buttonstyle{
+    border: none;
+    background-color: transparent;
+}
+.buttonstyle{
+    vertical-align: top;
+    margin-bottom: auto;
+}
+/* DECORATION */
+.topleftcircle{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    top: -300px;
+    left: -200px;
+}
+.box1{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    right: 0;
+    top: 300px;
+}
+.circle1{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    left: 0;
+    top: 1400px;
+}
+.circle2{
+    position: absolute;
+    z-index: -1;
+    width: 15%;
+    right: -70px;
+    top: 1800px;
+}
+.circle3{
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+    left: 50px;
+    top: 2400px;
+}
+.box2{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    left: 50px;
+    top: 1000px; 
+}
+.ball1{
+    position: absolute;
+    z-index: -1;
+    width: 5%;
+    right: 50px;
+    top: 1400px; 
+}
+.circle4{
+    position: absolute;
+    z-index: -1;
+    width: 15%;
+    left: -70px;
+    top: 600px; 
+}
+.ball2{
+    position: absolute;
+    z-index: -1;
+    width: 5%;
+    right: 70px;
+    top: 600px; 
+}
+.ball3{
+    position: absolute;
+    z-index: -1;
+    width: 8%;
+    left: 70px;
+    top: 1200px; 
+}
+.circle5{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    right: 50px;
+    top: 1600px; 
+}
+.circle6{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    right: 100px;
+    top: 1600px; 
+}
+.circle7{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    left: -50px;
+    top: 600px; 
+}
+.box3{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    right: 50px;
+    top: 1700px; 
+}
+.circle8{
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    left: 50px;
+    top: 1700px; 
+}
+.compe-menu{
+    display: none !important;
+}
+.description-compe{
+    display: none !important;
+}
+.seminar-menu{
+    display: none !important;
+}
+.description-seminar{
+    display: none !important;
+}
+.event-active{
+    display: block !important;
+}
+
+.menuslider{
+    overflow-x: auto;
+    scroll-behavior: auto;
+}
+/* width */
+.menuslider::-webkit-scrollbar {
+    display: none;
+  }
+.menuslide{
+    width: 200px !important;
+    margin-right: 15px;
+}
+.fillspace{
+    background-color: white;
+}
+.purple{
+    color: #6D3EB0;
+}
+.yellow{
+    color: #FFB500;
+}
+.blue{
+    color: #3381FF;
+}
+.darkblue{
+    color: #3E59D5;
+}
+.middarkblue{
+    color: #3462DA;
+}

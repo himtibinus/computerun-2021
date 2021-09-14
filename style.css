@@ -1,0 +1,184 @@
+@font-face {
+  font-family: airstrike;
+  src: url(../FONT/airstrike/airstrike.ttf);
+}
+@font-face {
+  font-family: bahnschrift;
+  src: url(../FONT/Bahnschrift/BAHNSCHRIFT.TTF);
+}
+* {
+  font-family: airstrike;
+}
+body {
+  background-image: linear-gradient(135deg, #ffbe2741, #ad178242);
+  background-repeat: no-repeat;
+}
+
+/* Title */
+
+.title {
+  font-family: airstrike;
+  color: #ad1782;
+  text-shadow: 4px 4px 2px #ffb500;
+  text-align: center;
+}
+.welcometext,
+.name,
+.University,
+.NIM {
+  background: -webkit-linear-gradient(#3381ff, #6d3eb0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.NIM,
+.University {
+  font-family: bahnschrift;
+  font-weight: bold;
+}
+.logoutbutton {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(#6d3eb0, #3381ff) 1;
+  background-color: transparent;
+  color: #3e59d5;
+  text-decoration: none;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  transition: 1s;
+}
+.logoutbutton:hover {
+  background: linear-gradient(#6d3eb0, #3381ff);
+  color: #ffbe27;
+  text-decoration: none;
+}
+.lefttopassets,
+.righttopassets {
+  width: 100px;
+  margin-top: 10%;
+}
+
+/* RIGHT */
+.logoimage,
+.runimage {
+  width: 75%;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .logoimage {
+    margin-left: -90%;
+    width: 150%;
+  }
+}
+.righttopassets {
+  width: 50px;
+  position: absolute;
+  right: 0;
+}
+
+/* Table */
+.titleticket {
+  background: -webkit-linear-gradient(#3381ff, #6d3eb0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.headtable {
+  background: linear-gradient(45deg, #ad1782, #6d3eb0);
+  color: white;
+  text-align: center;
+}
+.headtable th {
+  font-family: bahnschrift;
+  background: transparent;
+}
+
+.bodytable {
+  text-align: center;
+  background-color: white;
+}
+.bodytable th,
+.bodytable td {
+  color: #8d2a97;
+  font-family: bahnschrift;
+}
+
+.btn-custom-active {
+  background: linear-gradient(90deg, #3a7cf9, #a71d89);
+  color: white !important;
+  font-family: airstrike;
+}
+.btn-custom-disable {
+  color: #8095cb !important;
+  border: 2px solid #8095cb !important;
+  background: none;
+  font-family: airstrike;
+}
+.modal-body p {
+  font-family: bahnschrift;
+}
+.titlesecond {
+  font-family: bahnschrift;
+  color: #8d2a97;
+}
+.modal-header {
+  background: linear-gradient(45deg, #ad1782, #6d3eb0);
+  color: white;
+}
+
+.registermorebutton {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(135deg, #ad1782, #ffd044);
+  color: white;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  transition: 1s;
+  text-decoration: none;
+  text-align: center;
+}
+.registermorebutton:hover {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(#ad1782, #ffd044) 1;
+  background: none;
+  background-color: transparent;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#ad1782, #ffd044);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headtable tr:first-child th:first-child {
+  border-top-left-radius: 1rem !important;
+}
+
+/* top-right border-radius */
+.headtable tr:first-child th:last-child {
+  border-top-right-radius: 1rem !important;
+}
+
+/* bottom-left border-radius */
+.bodytable tr:last-child th:first-child {
+  border-bottom-left-radius: 1rem !important;
+}
+
+/* bottom-right border-radius */
+.bodytable tr:last-child td:last-child {
+  border-bottom-right-radius: 1rem !important;
+}
+.eventcard {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .table {
+    display: none;
+  }
+  .eventcard {
+    display: block !important;
+  }
+  .headtable {
+    text-align: left;
+  }
+}
