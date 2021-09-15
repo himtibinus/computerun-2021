@@ -1173,6 +1173,10 @@ p {
         font-size: 1.2rem;
     }
 
+    .bg-wrapper .wave-down {
+        top: -1rem;
+    }
+
     /* About Us */
     .about-us {
         padding: 3rem 2rem;
@@ -1498,5 +1502,4 @@ p {
 
 @media (max-width: 320px) {
 
-    
 }
