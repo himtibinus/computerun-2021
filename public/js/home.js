@@ -38,13 +38,13 @@ var vh = Math.max(body.scrollHeight, body.offsetHeight,
 let modalShow = 0;
 
 /* Listen to scrolling event */
-/* window.addEventListener("scroll", function(event) {
+window.addEventListener("scroll", function(event) {
     var top = this.scrollY;
     if (top >= vh/2 && modalShow == 0) {
         loginModal.show();
         modalShow = 1;
     }
-}, false); */
+}, false);
 
 /* Closes the modal */
 function closeModal() {

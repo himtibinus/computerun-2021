@@ -21,6 +21,11 @@
     --purple-50: rgba(173, 23, 130, 0.5);;
     --blue: #3E59D5;
     --shade: #2E3A59;
+    --fs-800: 3rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.2rem;
+    --fs-400: 1rem;
 }
 
 body {
@@ -40,7 +45,7 @@ a {
 h2 {
     font-family: Airstrike;
     color: var(--purple);
-    font-size: 3rem;
+    font-size: var(--fs-800);
 }
 
 h3 {
@@ -67,7 +72,7 @@ p {
 }
 
 #loginmodal h2 {
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
     margin-bottom: 2rem;
 }
 
@@ -97,7 +102,7 @@ p {
     border: none;
     outline: none;
     font-family: Airstrike;
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
     padding: 0.3rem 2rem;
     color: var(--white);
     background: var(--bg-purple-yellow);
@@ -166,7 +171,7 @@ p {
     margin-bottom: 2rem;
 }
 .about-us .right p {   
-    font-size: 1.2rem;
+    font-size: var(--fs-500);
     line-height: 1.5rem;
 }
 
@@ -243,7 +248,7 @@ p {
     width: max-content;
     padding: 0.4rem 1.1rem;
     font-family: Airstrike;
-    font-size: 1.2rem;
+    font-size: var(--fs-500);
     color: var(--white);
     background: var(--bg-purple-yellow);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -252,10 +257,6 @@ p {
 
 /* Business-IT */
 .events .business-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     max-width: fit-content;
     width: 55rem;
     margin: 4rem auto;
@@ -275,7 +276,7 @@ p {
     background-color: var(--white);
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);    
     /* border: 0.5px solid rgba(0, 0, 0, 0.65); */
-    border-radius: 16px;
+    border-radius: 1rem;
     padding: 2.5rem 1.5rem;
     margin-left: 3rem;
 }
@@ -285,21 +286,29 @@ p {
     margin-bottom: 2rem;
 }
 
+.events .business-container .card-small .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .events .business-container .card-small h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: var(--fs-600);
+    margin-bottom: 2rem;
 }
 
 .events .business-container .card-small p {
     text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: var(--fs-400);
+    margin-bottom: 2rem;
 }
 
 .events .card-small a {
     width: max-content;
     padding: 0.3rem 2rem;
     font-family: Airstrike;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     text-align: center;
     line-height: 1rem;
     color: var(--white);
@@ -318,10 +327,6 @@ p {
 
 /* Workshop */
 .events .workshop-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     max-width: fit-content;
     width: 55rem;
     margin: 4rem auto;
@@ -358,14 +363,14 @@ p {
 }
 
 .events .workshop-container .card-medium h3 {
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
 }
 
 .events .workshop-container .card-medium a {
     width: max-content;
     padding: 0.4rem 1.1rem;
     font-family: Airstrike;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     color: var(--white);
     background: var(--bg-purple-yellow);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -381,10 +386,6 @@ p {
 
 /* Seminar */
 .events .seminar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     max-width: fit-content;
     width: 55rem;
     margin: 4rem auto;
@@ -409,13 +410,20 @@ p {
     margin-left: 3rem;
 }
 
+.events .seminar-container .card-small .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .events .seminar-container .card-small img {
     width: 9rem;
     margin-bottom: 2rem;
 }
 
 .events .seminar-container .card-small h3 {
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
     margin-bottom: 1rem;
 }
 
@@ -439,7 +447,6 @@ p {
 }
 
 /* FAQ */
-
 .faq {
     padding: 6rem 8rem;
 }
@@ -479,7 +486,7 @@ p {
 
 .faq h3 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: var(--fs-700);
     color: var(--black);
     text-shadow: none;
     margin-bottom: 4rem;
@@ -502,7 +509,7 @@ p {
     align-items: center;
     justify-content: space-between;
     color: var(--blue);
-    font-size: 2rem;
+    font-size: var(--fs-700);
     margin-bottom: 0.5rem;
 }
 
@@ -567,7 +574,7 @@ p {
     align-items: center;
     justify-content: space-between;
     color: var(--gray);
-    font-size: 2rem;
+    font-size: var(--fs-700);
     margin-top: 0.5rem;
 
     overflow-y: hidden;
@@ -579,7 +586,7 @@ p {
 }
 
 .faq .box .bot .left div {
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
 }
 
 .faq .box .bot .left span {
@@ -608,7 +615,7 @@ p {
 .sponsors h3 {
     color: var(--black);
     text-shadow: none;
-    font-size: 2rem;
+    font-size: var(--fs-700);
     margin-bottom: 3rem;
 }
 
@@ -632,7 +639,7 @@ p {
 }
 
 .sponsors span h4 {
-    font-size: 1rem;
+    font-size: var(--fs-400);
     margin: 0rem;
 }
 
@@ -654,7 +661,7 @@ p {
 .medpar h3 {
     color: var(--black);
     text-shadow: none;
-    font-size: 2rem;
+    font-size: var(--fs-700);
     margin-bottom: 2rem;
 }
 
@@ -673,11 +680,823 @@ p {
 }
 
 .medpar span h4 {
-    font-size: 1rem;
+    font-size: var(--fs-400);
     margin: 0rem;
 }
 
 .medpar span a {
     color: var(--blue);
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    /* About Us */
+    .about-us .left .video {
+        width: 30rem;
+        height: 16rem;
+    }
+
+    .about-us .right p {
+        font-size: 1rem;
+    }
+
+    .about-us .left img {
+        width: 12rem;
+        top: -3.5rem;
+        left: -3.5rem;
+    }
+
+    /* Events */
+    .events .card-big {
+        width: 52rem;
+        padding: 5rem 4rem;
+    }
+
+    .events .opening-container .box {
+        width: 4rem;
+        right: -6rem;
+    }
+
+    .events .business-container .box {
+        width: 5rem;
+        left: -4rem;
+    }
+
+    .events .business-container {
+        width: 52rem;
+    }
+
+    .events .business-container .card-small {
+        margin-left: 2rem;
+    }
+
+    .events .workshop-container {
+        width: 52rem;
+        margin: 3rem auto;
+    }
+
+    .events .workshop-container .illust {
+        width: 9rem;
+    }
+
+    .events .workshop-container .card-medium {
+        padding: 3rem;
+    }
+
+    .events .workshop-container .ball {
+        right: -6rem;
+    }
+    
+    .events .seminar-container {
+        width: 52rem;
+    }
+
+    .events .seminar-container .circle {
+        right: calc(100vw - 12rem);
+    }
+
+    .events .seminar-container .card-small {
+        margin-left: 2rem;
+    }
+
+    .events .run {
+        width: 16rem;
+    }
+
+    /* FAQ */
+    .faq .box .bot .left div {
+        font-size: 1.3rem;
+    }
+
+    /* Sponsor */
+    .sponsors span h4 {
+        font-size: 1.3rem;
+    }
+
+    .sponsors span a {
+        font-size: 1.3rem;
+    }
+
+    /* Medpars */
+
+    .medpar span h4 {
+        font-size: 1.3rem;
+    }
+
+    .medpar span a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* About Us */
+    .about-us {
+        padding: 3rem 4rem;
+    }
+
+    .about-us .container {
+        margin-top: 3rem;
+        padding: 0rem 2.4rem;
+    }
+
+    .about-us .left .video {
+        width: 35rem;
+        margin-right: 0rem;
+    }
+ 
+    .about-us .right{
+        width: 100%;
+    }
+
+    .about-us .right h2 {
+        margin: 2rem 0rem;
+        text-align: center;
+    }
+
+    .about-us .right p {
+        line-height: 2rem;
+    }
+
+    /* Events */
+    .events {
+        padding: 6rem 4rem;
+    }
+
+    .events h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* Opening */
+    .events .opening-container {
+        max-width: fit-content;
+        margin: 0rem auto;
+    }
+
+    .events .opening-container .circle {
+        width: 8rem;
+        position: absolute;
+        z-index: 1;
+        top: -3.5rem;
+        left: -3.5rem;
+    }
+
+    .events .opening-container .box {
+        width: 6rem;
+        position: absolute;
+        top: 3rem;
+        right: -8rem;
+    }
+
+    .events .card-big {
+        width: 100%;
+        padding: 4rem 2rem;
+        border-radius: 1.5rem;
+        align-items: center;
+    }
+
+    .events .card-big .image {
+        width: 16rem;
+        height: 13rem;
+    }
+
+    /* Business-IT */
+    .events .business-container {
+        max-width: fit-content;
+        width: 55rem;
+        margin: 4rem auto;
+    }
+
+    .events .business-container .illust {
+        width: 14rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .business-container .card-small {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        padding: 3.5rem 3rem;
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .business-container .card-small .right {
+        align-items: flex-start;
+        margin-left: 4rem;
+    }
+
+    .events .business-container .card-small img {
+        width: 11rem;
+        margin-bottom: 0rem;
+    }
+
+    .events .business-container .card-small h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .events .business-container .card-small p {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    /* Workshop */
+    .events .workshop-container {
+        max-width: fit-content;
+        width: 55rem;
+        margin: 4rem auto;
+    }
+
+    .events .workshop-container .illust {
+        width: 11rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .workshop-container .card-medium {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        padding: 3.5rem 3rem;
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .workshop-container .card-content {
+        height: 12rem;
+        width: 100%;
+        margin-left: 3rem;
+    }
+
+    .events .workshop-container .card-medium img {
+        width: 11rem;
+    }
+
+    .events .workshop-container .card-medium p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    .events .workshop-container .card-medium a {
+        width: max-content;
+        padding: 0.3rem 2rem;
+        font-family: Airstrike;
+        font-size: var(--fs-400);
+        text-align: center;
+        line-height: 1rem;
+        color: var(--white);
+        background: var(--bg-purple-yellow);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    /* Business-IT */
+    .events .seminar-container {
+        max-width: fit-content;
+        width: 55rem;
+        margin: 4rem auto;
+    }
+
+    .events .seminar-container .illust {
+        width: 12rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .seminar-container .card-small {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        padding: 3.5rem 3rem;
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .events .seminar-container .card-small .right {
+        align-items: flex-start;
+        margin-left: 4rem;
+    }
+
+    .events .seminar-container .card-small img {
+        width: 11rem;
+        margin-bottom: 0rem;
+    }
+
+    .events .seminar-container .card-small h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .events .seminar-container .card-small p {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .events .run {
+        width: 12rem;
+        right: 4rem;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 6rem 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .wave-down {
+        top: -1.5rem;
+    }
+
+    .donut-up {
+        width: 8rem;
+        left: calc(100vw - 8rem);
+    }
+
+    .donut-down {
+        width: 8rem;
+        left: calc(100vw - 8rem);
+    }
+
+    .faq h3 {
+        font-size: 1.8rem;
+    }
+
+    .faq .box {
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+    }
+
+    .faq .box .top {
+        margin-bottom: 0rem;
+    }
+
+    .faq .box .top .left span {
+        font-size: 1.7rem;
+        padding: 0.1rem 0rem;
+        padding-right: 1rem;
+    }
+
+    .faq .box .top .left div {
+        font-size: 1.7rem;
+    }
+
+    .faq .box .bot .left {
+        align-items: flex-start;
+    }
+
+    .faq .box .bot .left div {
+        font-size: 1.2rem;
+    }
+
+    .faq .box .bot .left span {
+        font-size: 1.7rem;
+        padding: 0.1rem 0rem;
+        padding-right: 1rem;
+    }
+
+
+    /* Sponsors */
+    .sponsors {
+        padding: 6rem 4rem;
+        padding-top: 3rem;
+    }
+
+    .sponsors h2 {
+        margin-bottom: 4rem;
+    }
+
+    .sponsors h3 {
+        font-size: 1.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .sponsors .container-plat img {
+        width: 12rem;
+    }
+
+    .sponsors .container-gold img {
+        width: 9rem;
+    }
+
+    .sponsors .container-silver img {
+        width: 6rem;
+    }
+
+    .sponsors span {
+        margin-top: 1rem;
+    }
+
+    .sponsors span h4 {
+        font-size: 1.5rem;
+    }
+
+    .sponsors span a {
+        font-size: 1.5rem;
+    }
+
+    /* Media Partner */
+    .medpar {
+        padding: 0rem 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .medpar h3 {
+        font-size: 1.8rem;
+    }
+
+    .medpar .container-silver {
+        width: 100%;
+    }
+
+    .medpar .container-silver img {
+        width: 6rem;
+        margin: 0.5rem 0.5rem;
+    }
+
+    .medpar span {
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .medpar span h4 {
+        font-size: 1.5rem;
+    }
+
+    .medpar span a {
+        font-size: 1.5rem;
+    }
+
+    .bg-wrapper-faq .wave-up {
+        bottom: -1rem;
+    }
+
+}
+
+@media (max-width: 428px) {
+    /* Login Modal */
+    #loginmodal .modal-content {
+        padding: 2rem 1rem;
+    }
+
+    .modal-dialog {
+        padding: 0rem 2rem;
+        margin: 0rem;
+    }
+
+    #loginmodal button {
+        font-size: 1.2rem;
+    }
+
+    #loginmodal span {
+        font-size: 0.9rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* About Us */
+    .about-us {
+        padding: 3rem 2rem;
+    }
+
+    .about-us .container {
+        padding: 0rem;
+    }
+
+    .about-us .left .video {
+        width: 22rem;
+    }
+
+    .about-us .right h2 {
+        margin: 1.5rem 0rem;
+    }
+
+    /* Events */ 
+    .events {
+        padding: 3rem 2rem;
+    }
+    
+    .events .card-big {
+        padding: 2rem 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    .events .card-big .card-content {
+        height: 100%;
+    }
+
+    .events .card-big .image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .events .card-big .card-content {
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .events .card-big .card-content p {
+        font-size: 0.8rem;
+    }
+
+    .events .card-big .card-content a {
+        width: max-content;
+        padding: 0.3rem 1.5rem;
+        font-family: Airstrike;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        color: var(--white);
+        background: var(--bg-purple-yellow);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .events .business-container {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .events .business-container .illust {
+        width: 10rem;
+    }
+
+    .events .business-container .card-small {
+        padding: 2rem 1.5rem;
+    }
+
+    .events .business-container .card-small:nth-child(3) {
+        margin-bottom: 0rem;
+    }
+
+    .events .business-container .card-small img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .events .business-container .card-small .right {
+        margin-left: 1.5rem;
+    }
+
+    .events .business-container .card-small h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .events .business-container .card-small p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .events .card-small a {
+        width: max-content;
+        padding: 0.3rem 1.5rem;
+        font-family: Airstrike;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        color: var(--white);
+        background: var(--bg-purple-yellow);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .events .workshop-container {
+        width: 100%;
+    }
+
+    .events .workshop-container .illust {
+        width: 8rem;
+    }
+
+    .events .workshop-container .card-medium img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .events .workshop-container .card-medium {
+        align-items: center;
+        padding: 2rem 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .events .workshop-container .card-content {
+        height: 100%;
+        margin-left: 1.5rem;
+        justify-content: center;
+    }
+
+    .events .workshop-container .card-medium h3 {
+        font-size: 1.2rem;
+    }
+    
+    .events .workshop-container .card-medium p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .events .workshop-container .card-medium a {
+        width: max-content;
+        padding: 0.3rem 1.5rem;
+        font-family: Airstrike;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        color: var(--white);
+        background: var(--bg-purple-yellow);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .events .seminar-container .illust {
+        width: 8rem;
+    }
+
+    .events .seminar-container {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .events .seminar-container .card-small {
+        padding: 2rem 1.5rem;
+    }
+
+    .events .seminar-container .card-small:nth-child(3) {
+        margin-bottom: 0rem;
+    }
+
+    .events .seminar-container .card-small img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .events .seminar-container .card-small .right {
+        margin-left: 1.5rem;
+    }
+
+    .events .seminar-container .card-small h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .events .seminar-container .card-small p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .events .run {
+        width: 8rem;
+        right: 2rem;
+    }
+
+    /* FAQ */
+    .donut-up {
+        width: 4rem;
+        left: calc(100vw - 4rem);
+    }
+
+    .donut-down {
+        width: 4rem;
+        left: calc(100vw - 4rem);
+    }
+
+    .bg-wrapper-faq .wave-down {
+        top: -0.5rem;
+    }
+
+    .faq {
+        padding: 3rem 2rem;
+    }
+
+    .faq h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .faq .box {
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .faq .box .top .left span {
+        font-size: 1.5rem;
+        padding: 0rem;
+        padding-right: 1rem;
+    }
+
+    .faq .box .top .left div {
+        font-size: 1.5rem;
+    }
+
+    .faq .box .setbox .right {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .faq .box .top .right .min {
+        width: 1rem;
+        height: 0.2rem;
+        top: 0.4rem;
+        left: -0.4rem;
+    }
+
+    .faq .box .top .right .plus {
+        width: 0.2rem;
+        height: 1rem;
+    }
+
+    .faq .box .bot .left span {
+        font-size: 1.5rem;
+        padding: 0rem;
+        padding-right: 1rem;
+    }
+
+    .faq .box .bot .left div {
+        font-size: 1rem;
+    }
+
+    /* Sponsors */
+    .sponsors {
+        padding: 3rem 2rem;
+    }
+
+    .sponsors h2 {
+        margin-bottom: 3rem;
+    }
+
+    .sponsors h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .sponsors .container-plat img {
+        width: 9rem;
+    }
+
+    .sponsors .container-gold img {
+        width: 6rem;
+    }
+
+    .sponsors .container-silver img {
+        width: 3.5rem;
+    }
+
+    .sponsors span h4 {
+        font-size: 1.2rem;
+    }
+
+    .sponsors span a {
+        font-size: 1.2rem;
+    }
+
+    .medpar {
+        padding: 0rem 2rem;
+    }
+
+    .medpar h3 {
+        font-size: 1.5rem;
+    }
+
+    .medpar .container-silver img {
+        width: 3.5rem;
+    }
+
+    .medpar span h4 {
+        font-size: 1.2rem;
+    }
+
+    .medpar span a {
+        font-size: 1.2rem;
+    }
+
+    .bg-wrapper-faq .wave-up {
+        bottom: 0rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    
 }

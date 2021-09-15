@@ -13,10 +13,10 @@
     <div class="modal fade" id="loginmodal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div>
+                <div class="d-none d-md-block">
                     <img onclick="closeModal()" class="float-end" src="/public/assets/images/home/modal-x.svg" alt="">
                 </div>
-                <h2 class="text-center">Welcome, Guest</h2>
+                <h2 class="text-center d-none d-md-block">Welcome, Guest</h2>
                 <div class="container d-flex d-flex flex-column justify-content-center align-items-center">
                     <input class="text" id="email" type="email" name="email" placeholder="E-Mail">
                     <input class="text" id="password" type="password" name="password" placeholder="Password">
@@ -36,7 +36,7 @@
 
     <!-- Home -->
     <section id="home" class="home">
-        <svg class="" width="100%" viewBox="0 0 1920 1081" fill="none">
+        <svg class="d-none d-lg-block" width="100%" viewBox="0 0 1920 1081" fill="none">
             <g clip-path="url(#clip0)">
             <rect width="1920" height="1080.5" fill="white"/>
             <rect x="3" y="-28" width="1920" height="1080.84" fill="url(#pattern0)"/>
@@ -136,7 +136,7 @@
             </defs>
         </svg>
         
-        <img class="d-block d-lg-none" src="/public/assets/images/home/mobile-background.svg" alt="">
+        <img class="w-100 d-block d-lg-none" src="/public/assets/images/home/mobile-background.svg" alt="">
     </section>
     
     <!-- About and Events -->
@@ -144,14 +144,14 @@
         <img class="wave-down" src="/public/assets/images/home/wave.png" alt="">
         <!-- About Us -->
         <section id="about-us" class="about-us">
-            <div class="container d-flex flex-row justify-content-center align-items-center">
+            <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <div class="left position-relative">
                     <iframe
                     class="video"
                     src="https://www.youtube.com/embed/7_ao-C9SHE8" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
-                    <img src="/public/assets/images/home/about-elips.svg" alt="">
+                    <img class="d-none d-lg-block" src="/public/assets/images/home/about-elips.svg" alt="">
                 </div>
                 <div class="right position-relative">
                     <h2>About Us</h2>
@@ -161,79 +161,95 @@
                         when an unknown printer took a galley of type and scrambled it to make a type 
                         specimen book. It has survived not only five 
                     </p>
-                    <img class="down-up-slow" src="/public/assets/images/home/about-ball.svg" alt="">
+                    <img class="down-up-slow d-none d-lg-block" src="/public/assets/images/home/about-ball.svg" alt="">
                 </div>
             </div>
         </section>
+
+        <!-- Events -->
         <section id="events" class="events">
             <h2>Events</h2>
             <!-- Opening -->
-            <div class="position-relative opening-container">
+            <div class="position-relative d-flex flex-column flex-lg-row justify-content-center align-items-center opening-container">
                 <div class="card-big">
                     <img class="image" src="/public/assets/images/home/opening-placeholder.svg" alt="">
                     <div class="card-content">
                         <h3>OPENING</h3>
-                        <p> 
+                        <p class="d-none d-md-block"> 
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                             It has survived not only five 
                         </p>
-                        <a href="">Register Now</a>
+                        <p class="d-block d-md-none">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        </p>
+                        <a class="d-none d-md-block" href="">Register Now</a>
+                        <a class="d-block d-md-none" href="">Register <br> Now</a>
                     </div>
                 </div>
-                <img class="circle" src="/public/assets/images/home/events-circle.svg" alt="">
-                <img class="box up-down" src="/public/assets/images/home/events-box.svg" alt="">
+                <img class="circle d-none d-lg-block" src="/public/assets/images/home/events-circle.svg" alt="">
+                <img class="box up-down d-none d-lg-block" src="/public/assets/images/home/events-box.svg" alt="">
             </div>
 
             <!-- Business-IT Competitions -->
-            <div class="position-relative business-container">
+            <div class="position-relative d-flex flex-column flex-lg-row justify-content-center align-items-center business-container">
                 <img class="illust" src="/public/assets/images/home/businessit-illust.svg" alt="">
                 <div class="card-small">
                     <img src="/public/assets/images/home/businessit-placeholder.svg" alt="">
-                    <h3>Business-IT Case</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="">Register <br> Now</a>
+                    <div class="right">
+                        <h3>Business-IT Case</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="">Register <br> Now</a>
+                    </div>
                 </div>
                 <div class="card-small">
                     <img src="/public/assets/images/home/businessit-placeholder.svg" alt="">
-                    <h3>Web Design Competition</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="">Register <br> Now</a>
+                    <div class="right">
+                        <h3>Web Design Competition</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="">Register <br> Now</a>
+                    </div>
                 </div>
-                <img class="box down-up" src="/public/assets/images/home/events-boxflip.svg" alt="">
+                <img class="box down-up d-none d-lg-block" src="/public/assets/images/home/events-boxflip.svg" alt="">
             </div>
             
             <!-- Workshop -->
-            <div class="position-relative workshop-container">
+            <div class="position-relative d-flex flex-column flex-lg-row justify-content-center align-items-center workshop-container">
                 <img class="illust" src="/public/assets/images/home/workshop-illust.svg" alt="">
                 <div class="card-medium">
                     <img src="/public/assets/images/home/workshop-placeholder.svg" alt="">
                     <div class="card-content">
-                        <h3>Workshop: <br> ABC </h3>
+                        <h3 class="d-none d-lg-block">Workshop: <br> ABC </h3>
+                        <h3 class="d-block d-lg-none">Workshop: ABC </h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="">Register Now</a>
+                        <a class="d-none d-lg-block" href="">Register Now</a>
+                        <a class="d-block d-lg-none" href="">Register <br> Now</a>
                     </div>
                 </div>
-                <img class="ball up-down-slow" src="/public/assets/images/home/workshop-ball.svg" alt="">
+                <img class="ball up-down-slow d-none d-lg-block" src="/public/assets/images/home/workshop-ball.svg" alt="">
             </div>
 
             <!-- Seminar -->
-            <div class="position-relative seminar-container">
+            <div class="position-relative d-flex flex-column flex-lg-row justify-content-center align-items-center seminar-container">
                 <img class="illust" src="/public/assets/images/home/seminar-illust.svg" alt="">
                 <div class="card-small">
                     <img src="/public/assets/images/home/businessit-placeholder.svg" alt="">
-                    <h3>Seminar 1</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="">Register <br> Now</a>
+                    <div class="right">
+                        <h3>Seminar 1</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="">Register <br> Now</a>
+                    </div>
                 </div>
                 <div class="card-small">
                     <img src="/public/assets/images/home/businessit-placeholder.svg" alt="">
-                    <h3>Seminar 2</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="">Register <br> Now</a>
+                    <div class="right">
+                        <h3>Seminar 2</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="">Register <br> Now</a>
+                    </div>
                 </div>
-                <img class="circle" src="/public/assets/images/home/seminar-circle.svg" alt="">
+                <img class="circle d-none d-lg-block" src="/public/assets/images/home/seminar-circle.svg" alt="">
             </div>
 
             <div class="w-100 position-relative">
@@ -398,7 +414,7 @@
                 <img src="/public/assets/images/home/sponsor-phgray.svg" alt="">
                 <img src="/public/assets/images/home/sponsor-phgray.svg" alt="">
             </div>
-            <span class="d-flex flex-row justify-content-center align-items-center">
+            <span class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <h4 class="text-center">Do you want to sponsor our event too?</h4>
                 <a href="">&nbsp; Run before it's too late</a>
             </span>
@@ -429,7 +445,7 @@
                 <img src="/public/assets/images/home/sponsor-phgray.svg" alt="">
                 <img src="/public/assets/images/home/sponsor-phgray.svg" alt="">
             </div>
-            <span class="d-flex flex-row justify-content-center align-items-center">
+            <span class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                 <h4 class="text-center">Do you want to sponsor our event too?</h4>
                 <a href="">&nbsp; Run before it's too late</a>
             </span>
