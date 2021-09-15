@@ -1,0 +1,107 @@
+/* Import Font */
+@font-face {
+    font-family: airstrike;
+    src: url(./Font/airstrike.ttf);
+}
+@font-face {
+    font-family: bahnschrift;
+    src: url(./Font/BAHNSCHRIFT.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: airstrike;
+}
+body{
+    background-image:linear-gradient(172.39deg, rgba(255, 192, 39, 0.2) 10.53%, rgba(173, 23, 130, 0.05) 75%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+}
+.about-title{
+    color: #AD1782;
+    text-shadow: 4px 4px 2px #ffb500;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.about-video{
+    margin: 1rem;
+}
+.vid-container{
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    padding-top: 46.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    /* ini padding topnya bisa buat mainin height sih */
+}
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.about-txt-sect{
+    margin: 1.5rem 0;
+}
+.txt-title h1{
+    background: -webkit-linear-gradient(#3381FF,#6D3EB0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+.about-txt{
+    width: 75%;
+    background:url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.about-txt p{
+    font-size: 1.3rem;
+    font-family: bahnschrift;
+    color: #AD1782;
+    padding: 1rem 0;
+}
+.aset{
+    position: absolute;
+}
+.donut{
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.circle{
+    z-index: -1;
+    bottom: -10%;
+    right: 5%;
+}
+
+@media screen and (max-width:768px){
+    .donut{
+        width: 25%;
+        top:7%;
+    }
+    .circle{
+        width: 12%;
+        bottom: -10%;
+        right: 5%;
+    }
+}
+
+
+@media screen and (max-width:426px){
+    .donut{
+        width: 20%;
+        top:18%;
+        left:2% ;
+    }
+    .circle{
+        width: 12%;
+        bottom: -10%;
+        right: 5%;
+    }
+}
