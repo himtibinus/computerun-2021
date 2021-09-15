@@ -1501,5 +1501,179 @@ p {
 }
 
 @media (max-width: 320px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 
+    h3 {
+        font-size: 1rem;
+    }
+    /* About Us */
+    .about-us {
+        padding: 1.5rem 2rem;
+    }
+
+    .about-us .container {
+        margin-top: 1rem;
+    }
+    
+    .about-us .left .video {
+        width: 100%;
+        height: 9rem;
+    }
+
+    .about-us .right p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /* Events */
+    .events {
+        padding: 1.5rem 2rem;
+    }
+
+    .events .card-big,
+    .events .business-container .card-small,
+    .events .workshop-container .card-medium,
+    .events .seminar-container .card-small {
+        padding: 1rem;
+        border-radius: 0.6rem;
+    }
+
+    .events .business-container .card-small h3,
+    .events .workshop-container .card-medium h3,
+    .events .seminar-container .card-small h3 {
+        font-size: 1rem;
+    }
+
+    .events .card-big .image,
+    .events .business-container .card-small img,
+    .events .workshop-container .card-medium img,
+    .events .seminar-container .card-small img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .events .card-big .card-content p,
+    .events .business-container .card-small p,
+    .events .workshop-container .card-medium p,
+    .events .seminar-container .card-small p {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    .events .card-big .card-content a,
+    .events .card-small a,
+    .events .workshop-container .card-medium a {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.8rem;
+        line-height: 0.7rem; 
+    }
+
+    .events .business-container .illust {
+        width: 8rem;
+    }
+
+    .events .workshop-container .illust,
+    .events .seminar-container .illust {
+        width: 7rem;
+    }
+
+    .events .run {
+        width: 6rem;
+        right: 1rem;
+    }
+
+    .donut-up {
+        width: 3rem;
+        left: calc(100vw - 3rem);
+    }
+
+    .donut-down {
+        width: 3rem;
+        left: calc(100vw - 3rem);
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 1.5rem 2rem;
+    }
+    .faq h2 {
+        margin-bottom: 1rem;
+    }
+
+    .faq h3 {
+        font-size: 1.2rem;
+    }
+
+    .br-purp {
+        border-right: 3px solid var(--purple) !important;
+    }
+
+    .faq .box .top .left span {
+        font-size: 1.2rem;
+        padding-right: 0.8rem;
+        border-right: 3px solid var(--blue);
+    }
+
+    .faq .box .top .left div {
+        font-size: 1.2rem;
+        padding-left: 0.8rem;
+    }
+
+    .faq .box .bot .left span {
+        font-size: 1.2rem;
+        padding-right: 0.8rem;
+        border-right: 3px solid var(--gray);
+    }
+
+    .faq .box .bot .left div {
+        font-size: 0.8rem;
+        padding-left: 0.8rem;
+    }
+
+    /* Sponsors */
+    .sponsors {
+        padding: 1.5rem 2rem;
+    }
+
+    .sponsors h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem
+    }
+
+    .sponsors .container-plat img {
+        width: 6.5rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .sponsors .container-gold img {
+        width: 4.5rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .sponsors .container-silver {
+        flex-wrap: wrap;
+    }
+
+    .sponsors .container-silver img {
+        width: 3rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .sponsors span h4,
+    .sponsors span a,
+    .medpar span h4,
+    .medpar span a {
+        font-size: 0.9rem;
+    }
+
+    .medpar .container-silver img {
+        width: 3rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .medpar h3 {
+        font-size: 1.2rem;
+    }
 }
