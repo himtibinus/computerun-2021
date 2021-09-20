@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./webDesign.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pop Up Web Design</title>
+</head>
+
+<body>
+
+    <h1 class="pop-up-title text-center py-3">WEB DESIGN COMPETITION</h1>
+    <img src="./assets/close.png" alt="" class="close-icon">
+    <section class="competition-info">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-5 py-3">
+                    <img src="./assets/Poster.png" alt="" class="w-100">
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="poster-title text-center mb-5">WEB DESIGN <br> COMPETITION</h1>
+                    <div class="poster-text mt-5  ">
+                        <h2>Start Date: </h2>
+                        <h2>End Date:</h2>
+
+                        <p class="text-parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore
+                            possimus adipisci eum
+                            tenetur sit accusamus, et iure illum sapiente, voluptatibus ipsam qui a quia eos corporis
+                            quos. Modi, corporis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container personal-detail">
+            <h2 class="personal-detail-title">Personal Detail</h2>
+            <div class="row pt-2">
+                <div class="col-lg-6 pt-3">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th class="ps-3">:</th>
+                            <th class="ps-3">Lorem ipsum dolor sit.</th>
+                        </tr>
+                        <tr>
+                            <th>Telephone</th>
+                            <th class="ps-3">:</th>
+                            <th class="ps-3">+62 888888888</th>
+                        </tr>
+                        <tr>
+                            <th>Line ID</th>
+                            <th class="ps-3">:</th>
+                            <th class="ps-3">@loremipsum</th>
+                        </tr>
+                        <tr>
+                            <th>Mailing Address</th>
+                            <th class="ps-3">:</th>
+                            <th class="ps-3">jsadjasdak@abc.com</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/Ticket.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 mb-3">
+        <div class="container case-submission pb-2">
+            <h2 class="case-submission-title">Case Submission</h2>
+            <div class="download-case px-5">
+                <div class="row border-bot">
+                    <div class="col-lg-6">
+                        <h3 class="sub-title">Download Case</h3>
+                        <p class="text-parag text-case">Download your competition case here</p>
+                    </div>
+                    <div class="col-lg-6 pt-3 text-center">
+                        <a href="#"><button class="button-case">Download</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="upload-case px-5">
+                <div class="row border-bot">
+                    <div class="col-lg-6">
+                        <h3 class="sub-title">Upload Answer</h3>
+                        <p class="text-parag text-case">Upload your final case answer here</p>
+                    </div>
+                    <div class="col-lg-6 pt-3 text-center">
+                        <input type="file" name="file" id="file" class="visually-hidden">
+                        <label for="file" class="button-case">Upload</label>
+                        <!--Jika sudah Uplaod, Di CSS aku display none-->
+                        <label for="file" class="button-uploaded">Upload</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-4 upload-history">
+                <div class="p-4">
+                    <h3 class="sub-title">Upload History</h3>
+                    <p class="text-parag text-case">Check your upload history here</p>
+                    <div class="upload-history-file p-3">
+                        <div class="history-file">File Name</div>
+                        <div class="history-file">Date</div>
+                        <div class="history-file history-download-button">
+                            <div class="button-history text-center">Download</div>
+                        </div>
+                        <!-- Jika belom submit -->
+                        <!-- <div class="placeholder-file">No File Submitted</div> -->
+                    </div>
+                    <div class="text-end p-2">
+                        <span class="reminder"><b>*only .zip file extension allowed</b></span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="text-center">
+        <button class="button-checkin my-3">Check-In</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
