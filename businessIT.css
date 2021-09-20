@@ -1,0 +1,275 @@
+/* Import Font */
+@font-face {
+  font-family: airstrike;
+  src: url(./Font/airstrike.ttf);
+}
+@font-face {
+  font-family: bahnschrift;
+  src: url(./Font/BAHNSCHRIFT.TTF);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.competition-info {
+  margin: unset;
+  padding: unset;
+}
+.pop-up-title {
+  background: linear-gradient(172.39deg, #ad1782, #6d3eb0);
+  color: white;
+  font-family: "airstrike";
+}
+
+.poster-title {
+  color: #ad1782;
+  font-family: "airstrike";
+}
+
+.poster-text {
+  font-family: "bahnschrift";
+  padding-left: 3rem;
+}
+.text-parag {
+  font-size: calc(1rem + 0.7vw);
+  margin-top: 2rem;
+}
+
+.personal-detail-title,
+.case-submission-title {
+  color: #8d2a97;
+  font-weight: 500;
+}
+
+.case-submission {
+  background: url(./assets/border-case.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.case-submission-title {
+  position: absolute;
+  top: -25px;
+  left: 1rem;
+  z-index: 1;
+  background-color: white;
+}
+
+.download-case {
+  padding: 4rem 1rem;
+}
+
+table {
+  line-height: 2.5rem;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-family: "bahnschrift";
+}
+
+.text-case {
+  font-weight: 500;
+}
+
+.button-case {
+  background: linear-gradient(90deg, #3a7cf9, #a71d89);
+  color: white;
+  font-family: "airstrike";
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50%;
+}
+.button-case::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.border-bot {
+  border-bottom: 1px solid #4474f0;
+}
+
+.upload-case {
+  padding: 0 1rem;
+}
+
+.text-danger {
+  font-size: 1rem;
+}
+
+.upload-history {
+  background-color: #e2e9ff;
+  border-radius: 20px;
+}
+
+.upload-history-file {
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+}
+
+.button-history {
+  background: linear-gradient(90deg, #3a7cf9, #a71d89);
+  color: white;
+  font-family: "airstrike";
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.history-download-button {
+  display: flex;
+  justify-content: end;
+}
+
+.history-file {
+  width: 33%;
+}
+
+.reminder {
+  color: #ff0000;
+  font-size: 1.2rem;
+}
+
+.button-checkin {
+  background: linear-gradient(90deg, #3a7cf9, #a71d89);
+  color: white;
+  font-family: "airstrike";
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.close-icon {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.button-uploaded {
+  display: none; 
+  background-color: white;
+  color: #8095cb;
+  border: 1px solid #8095cb;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50%;
+  font-family: "airstrike";
+  padding: 0.7rem 1rem;
+  border-radius: 10px;  
+  pointer-events: none;
+}
+
+.placeholder-file{
+    color: #00000080;
+    font-size: calc(1rem + 0.5vw);
+}
+@media only screen and (max-width: 1400px) {
+  .button-history {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .poster-text {
+    padding-left: 0;
+  }
+  .case-submission-title {
+    top: -22px;
+  }
+  .button-case {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .case-submission-title {
+    top: -20px;
+  }
+  .upload-history-file {
+    display: flex;
+    flex-direction: column;
+  }
+  .history-file {
+    width: 100%;
+  }
+  .history-download-button {
+    display: flex;
+    justify-content: center;
+  }
+  .button-history {
+    width: 50%;
+  }
+  .close-icon {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .close-icon {
+    width: 45px;
+  }
+  .pop-up-title {
+    font-size: calc(1.1rem + 1.5vw);
+  }
+}
+
+@media only screen and (max-width: 526px) {
+  .button-history {
+    font-size: 1.2em;
+  }
+  .button-history {
+    width: 75%;
+  }
+  .button-case {
+    width: 75%;
+  }
+  .reminder {
+    font-size: 1em;
+  }
+  .pop-up-title {
+    font-size: calc(1rem + 1.5vw);
+  }
+  .close-icon {
+    width: 35px;
+    top: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button-history {
+    font-size: 1em;
+  }
+  .button-case {
+    font-size: 1em;
+  }
+  .close-icon {
+    width: 25px;
+    top: 17px;
+  }
+  .pop-up-title {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .pop-up-title {
+    font-size: 1.1rem;
+  }
+  .close-icon {
+    width: 20px;
+    top: 17px;
+  }
+  .button-history {
+    padding: 0.5rem 0;
+  }
+}
