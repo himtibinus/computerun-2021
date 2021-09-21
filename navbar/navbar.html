@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Navbar</title>
+        <style>
+
+        @font-face { font-family: BAHNSCHRIFT; src: url('BAHNSCHRIFT\ 1.TTF'); } 
+
+        .navbar{
+            background: url('./assets/head.png') no-repeat  center fixed; 
+        }
+        
+        .navbar.nav-item.nav-link{
+            color:#8D2A97;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: BAHNSCHRIFT;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/C Logo 2021.png" alt="" style="width: 4vw; min-width: 80px;">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 1.4rem;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:#8D2A97;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:#8D2A97;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:#8D2A97;">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:#8D2A97;">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:#8D2A97;">Guidebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#" style="color:#8D2A97;">
+                                <img src="./assets/person header purple.png" alt="" width="35px" style="border: 3px solid #8D2A97; border-radius: 50%; margin-right: 5px;">
+                                <span>Edward Kencana</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
